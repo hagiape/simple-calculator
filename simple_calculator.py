@@ -11,6 +11,7 @@
 operation = ''
 first_number = ''
 second_number = ''
+result = ''
 print('Welcome to a simple calculator program.')
 # try block
 try:
@@ -24,18 +25,25 @@ try:
 # second number = input
         second_number = input('What is the second number?' )
 # perform operation if else
-# if +:
-# add two variables
-# if -:
-# subtract two varibles
-# if *:
-# multiply two variables
-# if /:
-# divide two variables
+        match operation:
+        # if +:
+            case '+':
+                # add two variables
+                result = int(first_number) + int(second_number)
+        # if -:
+            case '-':
+                # subtract two varibles
+                result = int(first_number) - int(second_number)
+        # if *:
+            case '*':
+                # multiply two variables
+                result = int(first_number) * int(second_number)
+        # if /:
+            case '/':
+            # divide two variables
+                result = int(first_number) / int(second_number)
 # display output
+        print(result)
 # ask if user wants to try again
-# if no break loop
-# print 'Thank you'
-# if neither yes or no break loop
 # raise exception 'please answer only yes or no'
 # implement except block
