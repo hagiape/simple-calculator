@@ -44,7 +44,7 @@ try:
 # display output
         print(result)
         # ask if user wants to try again
-        prompt_answer = input('Would you like to perform another calculation?\n(answer with "yes" or "no" only': )
+        prompt_answer = input('Would you like to perform another calculation?\n(answer with "yes" or "no" only:' )
         prompt_answer.lower()
             # if yes
             # if no break loop
@@ -58,3 +58,5 @@ try:
             if prompt_answer != 'yes':
                 raise Exception('Please answer with "yes" or "no" only.')
 # implement except block
+except ZeroDivisionError:
+    print('You cannot divide by zero!')
