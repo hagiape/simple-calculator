@@ -26,6 +26,8 @@ try:
                 result = int(first_number) * int(second_number)
             case '/':
                 result = int(first_number) / int(second_number)
+            case _:
+                raise Exception('Please enter only the mentioned operators.')
         print(result)
         prompt_answer = input('Would you like to perform another calculation?\n(answer with "yes" or "no" only:' )
         prompt_answer.lower()
