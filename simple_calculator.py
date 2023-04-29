@@ -11,12 +11,13 @@ operation = ''
 first_number = ''
 second_number = ''
 result = ''
+prompt_answer = ''
 print('Welcome to a simple calculator program')
 try:
     while True:
         operation = input('"+" for addition\n"-" for subtraction\n"x" for multiplication\n"/" for division\nWhat operation would you like to be performed? ')
         first_number = input('What is the first number? ')
-        second_number = input('What is the second number? ' )
+        second_number = input('What is the second number? ')
         match operation:
             case '+':
                 result = int(first_number) + int(second_number)
@@ -28,9 +29,9 @@ try:
                 result = int(first_number) / int(second_number)
             case _:
                 raise Exception('Please enter only the mentioned operators.')
-        print(result)
-        prompt_answer = input('Would you like to perform another calculation?\n(answer with "yes" or "no" only:' )
-        prompt_answer.lower()
+        print(int(result))
+        prompt_answer = input('Would you like to perform another calculation?\nanswer with "yes" or "no" only: ' )
+        prompt_answer = prompt_answer.lower()
         if prompt_answer == 'no':
             print('Thank you for using the program!')
             break
