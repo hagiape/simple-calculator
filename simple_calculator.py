@@ -7,6 +7,10 @@
 # 6. If no, Display “Thank you!” and the program will exit 
 # 7. Use Python Function and appropriate Exceptions to capture errors during runtime.
 
+# initialize public variables
+operation = ''
+first_number = ''
+second_number = ''
 # try block
 # while loop
 # ask operation to be used from user
