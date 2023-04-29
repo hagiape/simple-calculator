@@ -60,3 +60,5 @@ try:
 # implement except block
 except ZeroDivisionError:
     print('You cannot divide by zero!')
+except ValueError:
+    print('The calculator only accepts integers as input.')
