@@ -11,12 +11,18 @@
 operation = ''
 first_number = ''
 second_number = ''
+print('Welcome to a simple calculator program.')
 # try block
+try:
 # while loop
+    while True:
 # ask operation to be used from user
-# initialize two variables from input
+        operation = input('"+" for addition\n"-" for subtraction\n"x" for multiplication\n"/" for division\nWhat operation would you like to be performed? ')
+# reinitialize two variables from input
 # first number = input
+        first_number = input('What is the first number? ')
 # second number = input
+        second_number = input('What is the second number?' )
 # perform operation if else
 # if +:
 # add two variables
