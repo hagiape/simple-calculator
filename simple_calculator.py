@@ -19,7 +19,6 @@ try:
     while True:
 # ask operation to be used from user
         operation = input('"+" for addition\n"-" for subtraction\n"x" for multiplication\n"/" for division\nWhat operation would you like to be performed? ')
-# reinitialize two variables from input
 # first number = input
         first_number = input('What is the first number? ')
 # second number = input
@@ -44,6 +43,18 @@ try:
                 result = int(first_number) / int(second_number)
 # display output
         print(result)
-# ask if user wants to try again
-# raise exception 'please answer only yes or no'
+        # ask if user wants to try again
+        prompt_answer = input('Would you like to perform another calculation?\n(answer with "yes" or "no" only': )
+        prompt_answer.lower()
+            # if yes
+            # if no break loop
+        if prompt_answer == 'no':
+            # print 'Thank you'
+            print('Thank you for using the program!')
+            break
+            # if neither yes or no, break loop
+        # raise exception 'please answer only yes or no'
+        else:
+            if prompt_answer != 'yes':
+                raise Exception('Please answer with "yes" or "no" only.')
 # implement except block
