@@ -52,4 +52,4 @@ try:
 except ZeroDivisionError:
     print('You cannot divide by zero!')
 except ValueError:
-    print('The calculator only accepts integers as input.')
+    print('The calculator only accepts numbers as input.')
