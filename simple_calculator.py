@@ -44,7 +44,7 @@ try:
             case '*':
                 result = first_number * second_number
             case '/':
-                result = first_number // second_number
+                result = first_number / second_number
             case _:
                 raise Exception('Please enter only the mentioned operators.')
         border('The answer is: ' + str(result))
