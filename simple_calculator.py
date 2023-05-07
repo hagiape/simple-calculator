@@ -30,15 +30,21 @@ try:
         operation = input('"+" for addition\n"-" for subtraction\n"x" for multiplication\n"/" for division\nWhat operation would you like to be performed? ')
         first_number = input('What is the first number? ')
         second_number = input('What is the second number? ')
+        if '.' in first_number or second_number:
+            first_number = float(first_number)
+            second_number = float(second_number)
+        else:
+            first_number = int(first_number)
+            second_number = int(second_number)
         match operation:
             case '+':
-                result = int(first_number) + int(second_number)
+                result = first_number + second_number
             case '-':
-                result = int(first_number) - int(second_number)
+                result = first_number - second_number
             case '*':
-                result = int(first_number) * int(second_number)
+                result = first_number * second_number
             case '/':
-                result = float(first_number) / float(second_number)
+                result = first_number // second_number
             case _:
                 raise Exception('Please enter only the mentioned operators.')
         border('The answer is: ' + str(result))
